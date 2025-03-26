@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokes</title>
+    <link rel="stylesheet" href="./assets/css/pokedex.css">
+</head>
+<body>
+    <div class="pokedex">
+        <h1>Pokédex</h1>
+        <input type="text" id="pokeName" placeholder="Digite o nome ou id do Pokémon">
+        <button class="buttonVerde" onclick="fetchdata()">Buscar</button>
+        <button onclick="prevPokemon()">Anterior</button>
+        <button onclick="nextPokemon()">Próximo</button>
+        <br>
+        <div class="pokemon-display">
+             <img id="pokePngNormal" src="" alt="Pokémon" style="display: none;">
+        </div>
+        <div class="pokemon-display">
+            <img id="pokePng" src="" alt="Pokémon" style="display: none;">
+            <div class="pokedex-infos">
+            <div class="pokemon-info" id="pokemonInfo"></div></div>
+            <button id="backButton">Voltar</button>
+        </div>
+       
+        
+    </div>
+    
+    <script src="./assets/js/pokedex.js"></script>
+
+
+      
+</body>
+</html>

@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #f86e6e;
+    color: rgb(19, 19, 19);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.card {
+    background-color: rgb(213, 210, 210);
+    padding: 10px;
+    border-radius: 10px;
+    width: 150px;
+    
+    transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.05) rotate(15deg);
+    box-shadow: 0 0 40px rgba(26, 175, 239, 0.817);
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.pagination {
+    margin: 20px;
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #61dafb;
+    color: black;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#generationFilter {
+    font-size: 10px;
+    padding: 4px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    cursor:pointer;
+    margin-bottom: 15px;
+}
